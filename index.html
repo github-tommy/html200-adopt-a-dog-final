@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adopt A Dog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="adoptadog-logo.svg" alt="white logo adoptadog">
+        <h2>Seattle's premiere dog adoption agency</h2>
+        <div class="header-split-right">    
+            <div class="cart-logo">
+                <img src="cart-icon.svg" alt="cart logo">
+                <span class="cart-total">1234.56</span>
+                <a href="contact.html">Check-out</a>
+            </div>
+            <button></button>          
+        </div>
+    </div> 
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="dog.html">Dogs</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <section class="whole-section">
+        <section class="left-section">
+            <div class="top-left-section">
+                <img srcset="images/header-small.jpg 415w, 
+                             images/header-medium.jpg 1024w"
+                    sizes="(max-width: 415px)  415px,
+                           (max-width: 1024px)  1024px,
+                           2000px"
+                    src="images/header-large.jpg" alt="pic dog and me"/>
+                <h2>Adopt A Dog</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum repellendus voluptates distinctio quam veritatis vitae! Unde distinctio est, quidem consectetur illum dolorum odio atque aliquam repellendus cum natus! Molestiae, voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nobis molestias itaque tempora magni quasi esse culpa dolore ab ex mollitia nostrum, ullam provident, obcaecati est quidem doloribus corporis. Quibusdam.</p>
+                </div>
+            <div class="gallery-wrapper">
+                <div class="dog-gallery">
+                <img src="images/kenan-kitchen-1136827-unsplash.jpg" alt="murphy" onClick="showDogInfo(dog1);">
+                <h4>Murphy</h4>
+                <p>Cost to Adopt <span class="price">$123.45</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button onclick="adoptThisDog(123)">Adopt</button>
+            </div>
+            <div class="dog-gallery">
+                <img src="images/kenan-kitchen-1136827-unsplash.jpg" alt="poppy" onClick="showDogInfo(dog2);">
+                <h4>Poppy</h4>
+                <p>Cost to Adopt <span class="price">$123.45</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button onclick="adoptThisDog(123)">Adopt</button>
+            </div>
+            <div class="dog-gallery">
+                <img src="images/kenan-kitchen-1136827-unsplash.jpg" alt="jack" onClick="showDogInfo(dog3);">
+                <h4>Jack</h4>
+                <p>Cost to Adopt <span class="price">$123.45</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button onclick="adoptThisDog(123)">Adopt</button>
+            </div>
+            <div class="dog-gallery">
+                <img src="images/kenan-kitchen-1136827-unsplash.jpg" alt="duffy" onClick="showDogInfo(dog4);">
+                <h4>Duffy</h4>
+                <p>Cost to Adopt <span class="price">$123.45</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button onclick="adoptThisDog(123)">Adopt</button>
+            </div>
+            <div class="dog-gallery">
+                <img src="images/kenan-kitchen-1136827-unsplash.jpg" alt="lucas" onClick="showDogInfo(dog5);">
+                <h4>Lucas</h4>
+                <p>Cost to Adopt <span class="price">$123.45</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button onclick="adoptThisDog(123)">Adopt</button>
+            </div>
+            <div class="dog-gallery">
+                <img src="images/kenan-kitchen-1136827-unsplash.jpg" alt="jake" onClick="showDogInfo(dog6);">
+                <h4>Jake</h4>
+                <p>Cost to Adopt <span class="price">$123.45</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button onclick="adoptThisDog(123)">Adopt</button>
+            </div> 
+        </div>
+        <div class="banner">
+            <div class="center-me"><a href="dog.html">See More Dogs</a></div>
+        </div>
+    </section>
+    <section class="right-section">
+        <div class="blog">
+            <img src="images/patrick-hendry-221863-unsplash.jpg" alt="blogOne">
+            <h3>Travelling with Your Dogs</h3>
+            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
+        </div>
+        <div class="blog">
+            <img src="images/matt-nelson-259365-unsplash.jpg" alt="blogTwo">
+            <h3>How to Walk Multiple Dogs</h3>
+            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
+        </div>
+        <div class="blog">
+            <img src="images/wyatt-ryan-367017-unsplash.jpg" alt="blogThree">
+            <h3>Teach Your Dogs to Fetch!</h3>
+            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
+        </div>
+    </section>
+</section>
+    <div class="footer">
+        <img src="adoptadog-logo.svg" alt="logo adoptadog">
+        <footer>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</footer>
+        <nav class="nav-bottom">
+            <a href="index.html">Home </a>
+            <a href="dog.html">Dogs </a>
+            <a href="blog.html">Blog </a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+    </div>
+    <hr>
+    <small>Copyright 2019 @tommybook-JN</small>
+    <script src="./dogAlert.js" charset="utf-8"></script>
+</body>
+</html>

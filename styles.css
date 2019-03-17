@@ -1,0 +1,320 @@
+/* index page - flex box + media query=============================== */
+
+.whole-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap;  */
+}
+
+.left-section {
+width: 70%;
+}
+
+.right-section {
+  width: 30%;
+  padding: 0 5rem;
+}
+
+.left-section img {
+  width: 100%;
+}
+
+.top-left-section {
+  margin: 1.5%;
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
+  width: 85%;
+}
+
+.top-left-section img {
+  width: 90%;
+}
+
+.gallery-wrapper {
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.dog-gallery {
+width: 30%;
+max-width: 400px;
+margin: 2rem 0;
+height: auto;
+border: 1px solid grey;
+}
+
+.dog-gallery img {
+width: 100%;
+}
+
+.blog {
+width: 80%;
+}
+
+.blog img {
+width: 70%;
+}
+
+/* to tranform into 2 column dog and make blog dissappear on ipad */
+
+@media (max-width: 1024px) {
+  .dog-gallery {
+    width: 40%;
+  }
+
+  .right-section {
+    display: none;
+    width: 0;  
+  }
+}
+
+/* to transform to 1 column dog on 500px mobile */
+
+@media (max-width: 415px) {
+  .gallery-wrapper {
+  flex-direction: column;
+}
+
+.dog-gallery {
+  width: 90%;
+  margin: 10px auto;
+}
+}
+
+/* TO PRINT BLACK ==================================================== */
+
+@media print {
+  body {
+    color: black;
+  }
+}
+
+/* dog page - dog gallery============================================ */
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1.5%;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.dog {
+  width: 22%;
+  margin: 1%;
+  height: auto;
+  border: 1px solid whitesmoke;
+}
+
+@media (max-width: 415px) {
+  .gallery {
+    flex-direction: column;
+  }
+  .dog {
+    width: 80%;
+  }
+}
+
+/* nav top and bottom=========================================================  */
+
+.nav-bar {
+  display: flex;
+  background-color:silver;
+  padding: 1rem;
+  border: 1rem;
+  margin: 1.5%;
+}
+
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.nav-bottom {
+  background-color: #02214d; 
+}
+
+.nav-bottom a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+/* header to shorten?=========================================================  */
+
+.header {
+  width: 94%;
+  height: 180px;
+  background-color: black;
+  color: rgb(11, 230, 11);
+  position: relative;
+  margin: 1.5%;
+  box-sizing: content-box;
+  font-size: .8rem;
+  padding: 20px;
+  background-image: url('./images/christopher-harris-57366-unsplash.jpg');
+  background-position: center -90;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header img {
+  width: 10%;
+}
+
+.header-split-left {
+  width: 50%;
+  padding: 30px 30px 0 0;
+}
+.header-split-right {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+.cart-logo img{
+  width: 10%;
+}
+
+h2 {
+  width: 50%;
+}
+
+.footer {
+  color: white;
+  background-color: #02214d;
+  text-align: center;
+  padding: 1rem;
+  border: 1rem;
+  margin: 1rem;
+}
+
+.footer img{
+  width: 15%;
+}
+
+/* blog page +++++++=======================================================  */
+
+.blog-container {
+  margin: 1.5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.blog-picture {
+  width: 40%;
+}
+
+.blog-picture img {
+  width: 80%;
+  height: 220px;
+}
+
+.blog-article {
+  width: 60%;
+  margin-right: 50px;
+}
+
+@media(max-width: 415px) {
+  .blog-picture {
+    width: 100%;
+  }
+
+  .blog-article {
+    display: none;
+    width: 0;
+  }
+} 
+
+.banner {
+  height: 4rem;
+  width: 30%;
+  background-color: #c1c1c1;
+  display: flex;
+  margin: auto;
+  border-radius: 10px 10px 10px 10px;
+  -moz-box-shadow: 2px 2px 2px 2px #888; 
+}
+
+.center-me {
+  color: black;
+  margin: auto;
+}
+
+button {
+  height: 2rem;
+  max-width: 200rem;
+  background-color: #99cc00;
+  margin: 0 0 10px 0;
+  color: white;
+  width: 100%;
+}
+
+h1 {
+  padding: 2rem;
+}
+
+.form-container {
+  padding: 20px;
+  font-size: 20px;
+  width: 50%;
+}
+
+.form-container img {
+  width: 5%;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="text2"], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+option[value="wa"], select {
+  width: 10%;
+  padding: 12px 20px;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit] hover {
+  background-color: #45a049;
+}
