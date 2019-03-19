@@ -24,8 +24,7 @@ function showDogInfo(dog) {
 
 // ======ADD blog======================================================
 
-
-document.getElementsByClassName('blog')[0].innerHTML = 'Blog1AAA Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
+document.getElementsByClassName('blog')[0].innerHTML = 'Blog1 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
 document.getElementsByClassName('blog')[1].innerHTML = 'Blog2 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
 document.getElementsByClassName('blog')[2].innerHTML = 'Blog3 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
 
@@ -37,11 +36,37 @@ document.getElementsByClassName('blog-header')[2].innerHTML = 'Teach Your Dogs t
 
 // ======ADD blog-picture======================================================
 
-document.getAttribute('src')[0].setAttribute('src', 'images/patrick-hendry-221863-unsplash.jpg');
-document.getAttribute('src')[1].setAttribute('src', 'images/matt-nelson-259365-unsplash.jpg');
-document.getAttribute('src')[2].setAttribute('src', 'images/wyatt-ryan-367017-unsplash.jpg');
+// document.getAttribute('src')[0].setAttribute('src', 'images/patrick-hendry-221863-unsplash.jpg');
+// document.getAttribute('src')[1].setAttribute('src', 'images/matt-nelson-259365-unsplash.jpg');
+// document.getAttribute('src')[2].setAttribute('src', 'images/wyatt-ryan-367017-unsplash.jpg');
 
-document.getAttribute('alt')[0].setAttribute('alt', 'me and dog in grand canyon');
-document.getAttribute('alt')[1].setAttribute('alt', 'walking multiple dogs');
-document.getAttribute('alt')[2].setAttribute('alt', 'teaching dog to fecth a ball');
+// document.getAttribute('alt')[0].setAttribute('alt', 'me and dog in grand canyon');
+// document.getAttribute('alt')[1].setAttribute('alt', 'walking multiple dogs');
+// document.getAttribute('alt')[2].setAttribute('alt', 'teaching dog to fecth a ball');
 
+let blog = document.querySelector('.blog-container');
+let blogpicture = document.createElement('article');
+
+console.log(blogpicture);
+
+let image = document.createElement('img');
+image.setAttribute('src','images/patrick-hendry-221863-unsplash.jpg');
+image.setAttribute('src','images/matt-nelson-259365-unsplash.jpg');
+image.setAttribute('src','images/wyatt-ryan-367017-unsplash.jpg');
+
+image.setAttribute('alt', 'me and dog in grand canyon');
+image.setAttribute('alt', 'me and dog in grand canyon');
+image.setAttribute('alt', 'me and dog in grand canyon');
+
+console.log(image);
+
+blogpicture.appendChild(image);
+
+console.log(blogpicture);
+
+blog.appendChild(blogpicture);
+
+// form.addEventListener('submit', function(e) {
+// e.preventDefault();
+// console.log('form submitted');
+// })

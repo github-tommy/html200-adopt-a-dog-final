@@ -227,6 +227,10 @@ h2 {
   height: 220px;
 }
 
+.blog-container img {
+  width: 40%;
+}
+
 .blog-article {
   width: 60%;
   margin-right: 50px;
