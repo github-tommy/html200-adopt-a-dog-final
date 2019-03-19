@@ -19,57 +19,75 @@
         <a href="blog.html">Blog</a>
     </nav>
     <div class="form-container">
-        <h3>check-out</h3>
-        <form action="/action_page.php">
-        <label for="firstName">First Name</label>
-        <br>
-        <input type="text" id="firstName" name="firstName" placeholder="First Name">
-        <br>
-        <label for="lastName">Last Name</label>
-        <input type="text" id="lastName" name="lastname" placeholder="Last Name">
-        <br>
-        <label for="email">Email Address</label>
-        <input type="text" id="email" name="email" placeholder="Email address">
-        <br>
-        <label for="streetAddress">Street Address</label>
-        <input type="text" id="streetaddress" name="streetAddress" placeholder="Street Address">
-        <br>
-        <label for="City">City</label>
-        <input type="text" id="city" name="city" placeholder="City">
-
-        <label for="state"> State</label>
-        <select id="text" name="state">
-            <option value="wa">WA</option>
-            <option value="ca">CA</option>
-            <option value="ny">NY</option>
-            <option value="other">Other</option>
-        </select>
-
-        <label for="text">Zip Code</label>
-        <input type="text2" id="zipCOde" name="zipCode" placeholder="Zip Code">
-        <br>
-        <label for="name">First Time Adopter?</label>
+        <h3>Check-out</h3>
+        <form action="">
         <label>
+            First Name:
+            <input type="text" name="firstname" size="30 maxlenght=100">
+        </label> 
+        <br />
+        <label>
+            Last Name:
+            <input type="text" name="lastname" size="30 maxlenght=100">
+        </label> 
+        <br />
+        <label>
+            Email:
+            <input type="text" name="email" size="30 maxlenght=100">
+        </label> 
+        <br />
+        <label>
+            Street Address:
+            <input type="text" name="streetaddress" size="30 maxlenght=100">
+        </label> 
+        <br />
+        <label>
+            City:
+            <input type="text" name="lastname" size="15 maxlenght=50">
+        </label> 
+        <br />
+        <label>
+            State:
+            <select id="text" name="state">
+                    <option value="wa">WA</option>
+                    <option value="ca">CA</option>
+                    <option value="ny">NY</option>
+                    <option value="other">Other</option>
+            </select>    
+        </label> 
+        <br />
+        <label>
+            Zip Code
+            <input type="text2" id="zipCOde" name="zipCode" placeholder="Zip Code">
+        </label> 
+        <br />
+        <label>
+            First Time Adopter?
             <input type="radio" name="yes" value="yes" checked>Yes
-        </label>
+        </label> 
         <label>
             <input type="radio" name="no" value="no" unchecked> No
-        </label>
-        <br>    
-        <label for="region">Pickup Location</label>
-        <select name="region">
+        </label> 
+        <br />
+        <label>
+            Pickup Location:
+            <select name="region">
             <option value="--" selected > ---</option>
             <option value="seattle">Seattle</option>
             <option value="bellevue">Bellevue</option>
             <option value="other">Other</option>
-        </select>
-        <br>
-        <label for="name">Dogs Adopted</label>
+            </select>
+        </label> 
+        <br />
+        <label>
+            Dogs Adopted
         <br>
         <img src=images/christopher-harris-57366-unsplash.jpg alt="dogs adopted">
         <br><br><brk></brk>
-        <label for="name">Total Adoption Cost</label>
-        <br>
+        <label>
+            Total Adoption Cost
+        </label> 
+        <br />
         <input type="submit" value="Submit">
         </form>
     </div>
@@ -85,6 +103,6 @@
     </div>
     <hr>
     <small>Copyright 2019 @tommybook-JN</small>
-    <script src="./dogAlert.js" charset="utf-8"></script>
+    <script src="./dogForm.js" charset="utf-8"></script>
 </body>
 </html>

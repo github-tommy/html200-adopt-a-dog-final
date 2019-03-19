@@ -45,9 +45,9 @@ document.getElementsByClassName('blog-header')[2].innerHTML = 'Teach Your Dogs t
 // document.getAttribute('alt')[2].setAttribute('alt', 'teaching dog to fecth a ball');
 
 let blog = document.querySelector('.blog-container');
-let blogpicture = document.createElement('article');
+let blogPost = document.createElement('article');
 
-console.log(blogpicture);
+console.log(blogPost);
 
 let image = document.createElement('img');
 image.setAttribute('src','images/patrick-hendry-221863-unsplash.jpg');
@@ -60,11 +60,11 @@ image.setAttribute('alt', 'me and dog in grand canyon');
 
 console.log(image);
 
-blogpicture.appendChild(image);
+blogPost.appendChild(image);
 
-console.log(blogpicture);
+console.log(blogPost);
 
-blog.appendChild(blogpicture);
+blog.appendChild(blogPost);
 
 // form.addEventListener('submit', function(e) {
 // e.preventDefault();
