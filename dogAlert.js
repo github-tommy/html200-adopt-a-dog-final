@@ -22,17 +22,12 @@ function showDogInfo(dog) {
     alert(dog);
 }
 
-// ======ADD blog-para======================================================
+// ======ADD blog======================================================
 
-// const x = blog-para;
 
-// for(let x = 0; x <blog-para.length; x++) {
-//     console.log(blog-para);
-// }
-
-document.getElementsByClassName('blog-para')[0].innerHTML = 'Blog1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae illum minus, praesentium tempora expedita voluptatum qui cumque pariatur tempore dolores quos voluptatibus, ut mollitia delectus molestias. Enim incidunt cumque quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae illum minus, praesentium tempora expedita voluptatum qui cumque pariatur tempore dolores quos voluptatibus, ut mollitia delectus molestias. Enim incidunt cumque quaerat.';
-document.getElementsByClassName('blog-para')[1].innerHTML = 'Blog2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae illum minus, praesentium tempora expedita voluptatum qui cumque pariatur tempore dolores quos voluptatibus, ut mollitia delectus molestias. Enim incidunt cumque quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae illum minus, praesentium tempora expedita voluptatum qui cumque pariatur tempore dolores quos voluptatibus, ut mollitia delectus molestias. Enim incidunt cumque quaerat.';
-document.getElementsByClassName('blog-para')[2].innerHTML = 'Blog3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae illum minus, praesentium tempora expedita voluptatum qui cumque pariatur tempore dolores quos voluptatibus, ut mollitia delectus molestias. Enim incidunt cumque quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae illum minus, praesentium tempora expedita voluptatum qui cumque pariatur tempore dolores quos voluptatibus, ut mollitia delectus molestias. Enim incidunt cumque quaerat.';
+document.getElementsByClassName('blog')[0].innerHTML = 'Blog1AAA Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
+document.getElementsByClassName('blog')[1].innerHTML = 'Blog2 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
+document.getElementsByClassName('blog')[2].innerHTML = 'Blog3 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
 
 // ======ADD blog-header======================================================
 
@@ -42,43 +37,11 @@ document.getElementsByClassName('blog-header')[2].innerHTML = 'Teach Your Dogs t
 
 // ======ADD blog-picture======================================================
 
-document.getElementsByClassName('blog-picture')[0].src = 'images/patrick-hendry-221863-unsplash.jpg';
-document.getElementsByClassName('blog-picture')[1].src = 'images/matt-nelson-259365-unsplash.jpg';
-document.getElementsByClassName('blog-picture')[2].src = 'images/wyatt-ryan-367017-unsplash.jpg';
+document.getAttribute('src')[0].setAttribute('src', 'images/patrick-hendry-221863-unsplash.jpg');
+document.getAttribute('src')[1].setAttribute('src', 'images/matt-nelson-259365-unsplash.jpg');
+document.getAttribute('src')[2].setAttribute('src', 'images/wyatt-ryan-367017-unsplash.jpg');
 
-// =====CREATE FORM ========================================================
+document.getAttribute('alt')[0].setAttribute('alt', 'me and dog in grand canyon');
+document.getAttribute('alt')[1].setAttribute('alt', 'walking multiple dogs');
+document.getAttribute('alt')[2].setAttribute('alt', 'teaching dog to fecth a ball');
 
-const form = document.createElement('form');
-const fields = ['First Name', 'Last Name', 'Email Address', 'Street Address', 'City', 'State', 'Zip Code', 'First Time Adopter?',];
-
-for(let i = 0; i <fields.length; i++) {
-    const label = document.createElement('label');
-    label.textContent = fields[i];
-    label.setAttribute('for',fields[i]);
-
-    const input = document.createElement('input');
-    input.setAttribute('id', fields[i]);
-
-    form.appendChild(label);
-    form.appendChild(input);
-
-    const submitButton = document.createElement('button');
-    submitButton.setAttribute ('type', 'submit');
-    submitButton.textContent = 'Submit';
-
-    form.appendChild(submitButton);
-
-    let formContainer = document.querySelector('.form-container');
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        console.log('form submitted');
-        console.log(form.elements[0].value);
-        console.log(form.elements[1].value);
-        console.log(form.elements[2].value);
-        console.log(form.elements[3].value);
-    })
-    formContainer.appendChild(form);
-}
-
-console.log(form);
