@@ -17,6 +17,7 @@ function adoptThisDog(adoptionFees) {
     console.log(totalAdoptionFees); 
 }
 
+
 function showDogInfo(dog) {
     console.log(dog);
     alert(dog);
@@ -36,14 +37,6 @@ document.getElementsByClassName('blog-header')[2].innerHTML = 'Teach Your Dogs t
 
 // ======ADD blog-picture======================================================
 
-// document.getAttribute('src')[0].setAttribute('src', 'images/patrick-hendry-221863-unsplash.jpg');
-// document.getAttribute('src')[1].setAttribute('src', 'images/matt-nelson-259365-unsplash.jpg');
-// document.getAttribute('src')[2].setAttribute('src', 'images/wyatt-ryan-367017-unsplash.jpg');
-
-// document.getAttribute('alt')[0].setAttribute('alt', 'me and dog in grand canyon');
-// document.getAttribute('alt')[1].setAttribute('alt', 'walking multiple dogs');
-// document.getAttribute('alt')[2].setAttribute('alt', 'teaching dog to fecth a ball');
-
 let blog = document.querySelector('.blog-container');
 let blogPost = document.createElement('article');
 
@@ -58,15 +51,42 @@ image.setAttribute('alt', 'me and dog in grand canyon');
 image.setAttribute('alt', 'me and dog in grand canyon');
 image.setAttribute('alt', 'me and dog in grand canyon');
 
-console.log(image);
+// console.log(image);
 
 blogPost.appendChild(image);
 
-console.log(blogPost);
+// console.log(blogPost);
 
 blog.appendChild(blogPost);
 
-// form.addEventListener('submit', function(e) {
-// e.preventDefault();
-// console.log('form submitted');
-// })
+// BORDER COLOR ON HOVER
+
+$('#photo1').hover(function(e) {
+    console.log('e');
+    $('#photo1').addClass('yellow-border')
+})
+
+$('#photo2').hover(function(e) {
+    console.log('e');
+    $('#photo2').addClass('pink-border')
+})
+
+$('#photo3').hover(function(e) {
+    console.log('e');
+    $('#photo3').addClass('red-border')
+})
+
+$('#photo4').hover(function(e) {
+    console.log('e');
+    $('#photo4').addClass('yellow-border')
+})
+
+$('#photo5').hover(function(e) {
+    console.log('e');
+    $('#photo5').addClass('pink-border')
+})
+
+$('#photo6').hover(function(e) {
+    console.log('e');
+    $('#photo6').addClass('red-border')
+})

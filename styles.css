@@ -322,3 +322,15 @@ input[type=submit] {
 input[type=submit] hover {
   background-color: #45a049;
 }
+
+.yellow-border {
+  border: 20px solid yellow;
+}
+
+.pink-border {
+  border: 20px solid pink;
+}
+
+.red-border {
+  border: 20px solid red;
+}
