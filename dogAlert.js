@@ -29,19 +29,19 @@ const blogPosts = [
         image: 'images/patrick-hendry-221863-unsplash.jpg',
         alt: 'beagles begging for food',
         headline: 'Travelling with your dogs',
-        blogText: 'Blog1 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi,'
+        blogText: 'Blog1 Blog1 Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog'
     },
     {
         image: 'images/matt-nelson-259365-unsplash.jpg',
         alt: 'beagles begging for food',
-        headline: 'Travelling with your dogs',
-        blogText: 'Blog2 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi,'
+        headline: 'How to Walk Multiple Dogs',
+        blogText: 'Blog2 Blog1 Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog,'
     },
     {
         image: 'images/wyatt-ryan-367017-unsplash.jpg',
         alt: 'beagles begging for food',
-        headline: 'Travelling with your dogs',
-        blogText: 'Blog3 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi,'
+        headline: 'Teach Your Dogs to Fetch!',
+        blogText: 'Blog3 Blog1 Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog'
     }
 ]
 

@@ -339,3 +339,7 @@ input[type=submit] hover {
 .red-border {
   border: 20px solid red;
 }
+
+p {
+  margin: 30px;
+}
