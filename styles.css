@@ -60,6 +60,11 @@ width: 80%;
 width: 70%;
 }
 
+.blog-container img {
+  width: 10%;
+  height: 300px;
+}
+
 /* to tranform into 2 column dog and make blog dissappear on ipad */
 
 @media (max-width: 1024px) {
@@ -228,7 +233,7 @@ h2 {
 }
 
 .blog-container img {
-  width: 40%;
+  width: 20%;
 }
 
 .blog-article {

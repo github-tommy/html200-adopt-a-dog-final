@@ -17,76 +17,80 @@ function adoptThisDog(adoptionFees) {
     console.log(totalAdoptionFees); 
 }
 
-
 function showDogInfo(dog) {
     console.log(dog);
     alert(dog);
 }
 
-// ======ADD blog======================================================
+// USING ARRAY
 
-document.getElementsByClassName('blog')[0].innerHTML = 'Blog1 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
-document.getElementsByClassName('blog')[1].innerHTML = 'Blog2 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
-document.getElementsByClassName('blog')[2].innerHTML = 'Blog3 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi, deleniti provident enim eius nobis cupiditate impedit, officia dolor minima? Enim nesciunt qui eius cumque ex.squaerat.';
+const blogPosts = [
+    {
+        image: 'images/patrick-hendry-221863-unsplash.jpg',
+        alt: 'beagles begging for food',
+        headline: 'Travelling with your dogs',
+        blogText: 'Blog1 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi,'
+    },
+    {
+        image: 'images/matt-nelson-259365-unsplash.jpg',
+        alt: 'beagles begging for food',
+        headline: 'Travelling with your dogs',
+        blogText: 'Blog2 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi,'
+    },
+    {
+        image: 'images/wyatt-ryan-367017-unsplash.jpg',
+        alt: 'beagles begging for food',
+        headline: 'Travelling with your dogs',
+        blogText: 'Blog3 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat dolorem dicta beatae quasi,'
+    }
+]
 
-// ======ADD blog-header======================================================
+const blogPostContainer = document.querySelector('.blog-container');
 
-document.getElementsByClassName('blog-header')[0].innerHTML = 'Travelling with your dogs';
-document.getElementsByClassName('blog-header')[1].innerHTML = 'How to Walk Multiple Dogs';
-document.getElementsByClassName('blog-header')[2].innerHTML = 'Teach Your Dogs to Fetch!';
+console.log('blog-container');
 
-// ======ADD blog-picture======================================================
+for(let i = 0; i < blogPosts.length; i++) {
+    let image = document.createElement('img');
+    let blogPost = document.createElement('article');
 
-let blog = document.querySelector('.blog-container');
-let blogPost = document.createElement('article');
+    image.setAttribute('src',blogPosts[i].image);
+    blogPostContainer.appendChild(image);
+    blogPost.innerHTML = '<h1 class="headline">' + blogPosts[i].headline + '</h1>' + '<p>' + blogPosts[i].blogText +'</p>';
+    blogPostContainer.appendChild(blogPost);
 
-console.log(blogPost);
+    console.log(image);
 
-let image = document.createElement('img');
-image.setAttribute('src','images/patrick-hendry-221863-unsplash.jpg');
-image.setAttribute('src','images/matt-nelson-259365-unsplash.jpg');
-image.setAttribute('src','images/wyatt-ryan-367017-unsplash.jpg');
+}
 
-image.setAttribute('alt', 'me and dog in grand canyon');
-image.setAttribute('alt', 'me and dog in grand canyon');
-image.setAttribute('alt', 'me and dog in grand canyon');
 
-// console.log(image);
+// // BORDER COLOR ON HOVER
 
-blogPost.appendChild(image);
+// $('#photo1').hover(function(e) {
+//     console.log('e');
+//     $('#photo1').addClass('yellow-border')
+// })
 
-// console.log(blogPost);
+// $('#photo2').hover(function(e) {
+//     console.log('e');
+//     $('#photo2').addClass('pink-border')
+// })
 
-blog.appendChild(blogPost);
+// $('#photo3').hover(function(e) {
+//     console.log('e');
+//     $('#photo3').addClass('red-border')
+// })
 
-// BORDER COLOR ON HOVER
+// $('#photo4').hover(function(e) {
+//     console.log('e');
+//     $('#photo4').addClass('yellow-border')
+// })
 
-$('#photo1').hover(function(e) {
-    console.log('e');
-    $('#photo1').addClass('yellow-border')
-})
+// $('#photo5').hover(function(e) {
+//     console.log('e');
+//     $('#photo5').addClass('pink-border')
+// })
 
-$('#photo2').hover(function(e) {
-    console.log('e');
-    $('#photo2').addClass('pink-border')
-})
-
-$('#photo3').hover(function(e) {
-    console.log('e');
-    $('#photo3').addClass('red-border')
-})
-
-$('#photo4').hover(function(e) {
-    console.log('e');
-    $('#photo4').addClass('yellow-border')
-})
-
-$('#photo5').hover(function(e) {
-    console.log('e');
-    $('#photo5').addClass('pink-border')
-})
-
-$('#photo6').hover(function(e) {
-    console.log('e');
-    $('#photo6').addClass('red-border')
-})
+// $('#photo6').hover(function(e) {
+//     console.log('e');
+//     $('#photo6').addClass('red-border')
+// })
