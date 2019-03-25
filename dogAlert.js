@@ -58,7 +58,7 @@ for(let i = 0; i < blogPosts.length; i++) {
     blogPost.innerHTML = '<h1 class="headline">' + blogPosts[i].headline + '</h1>' + '<p>' + blogPosts[i].blogText +'</p>';
     blogPostContainer.appendChild(blogPost);
 
-    console.log(image);
+    // console.log(image);
 
 }
 
