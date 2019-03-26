@@ -29,3 +29,7 @@ $('#photo6').hover(function(e) {
     console.log('e');
     $('#photo6').addClass('red-border')
 })
+
+$('button').click(function() {
+    alert('Thank you for adopting!')
+});
