@@ -29,19 +29,19 @@ const blogPosts = [
         image: 'images/patrick-hendry-221863-unsplash.jpg',
         alt: 'beagles begging for food',
         headline: 'Travelling with your dogs',
-        blogText: 'Blog1 Blog1 Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog'
+        blogText: 'Blog1 Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.'
     },
     {
         image: 'images/matt-nelson-259365-unsplash.jpg',
         alt: 'beagles begging for food',
         headline: 'How to Walk Multiple Dogs',
-        blogText: 'Blog2 Blog1 Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog,'
+        blogText: 'Blog2 Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.'
     },
     {
         image: 'images/wyatt-ryan-367017-unsplash.jpg',
         alt: 'beagles begging for food',
         headline: 'Teach Your Dogs to Fetch!',
-        blogText: 'Blog3 Blog1 Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog Blog'
+        blogText: 'Blog3 Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.'
     }
 ]
 
@@ -59,38 +59,6 @@ for(let i = 0; i < blogPosts.length; i++) {
     blogPostContainer.appendChild(blogPost);
 
     // console.log(image);
-
 }
 
-
-// // BORDER COLOR ON HOVER
-
-// $('#photo1').hover(function(e) {
-//     console.log('e');
-//     $('#photo1').addClass('yellow-border')
-// })
-
-// $('#photo2').hover(function(e) {
-//     console.log('e');
-//     $('#photo2').addClass('pink-border')
-// })
-
-// $('#photo3').hover(function(e) {
-//     console.log('e');
-//     $('#photo3').addClass('red-border')
-// })
-
-// $('#photo4').hover(function(e) {
-//     console.log('e');
-//     $('#photo4').addClass('yellow-border')
-// })
-
-// $('#photo5').hover(function(e) {
-//     console.log('e');
-//     $('#photo5').addClass('pink-border')
-// })
-
-// $('#photo6').hover(function(e) {
-//     console.log('e');
-//     $('#photo6').addClass('red-border')
-// })
+$('.cart-total').text(totalAdoptionFees);
